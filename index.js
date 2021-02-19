@@ -3,11 +3,8 @@ let input = document.getElementById('fname')
 input.onkeypress = function(e) {
     if ( e.key == 'Enter' ) {
         let url = 'https://clem2004.github.io/enigme/' + input.value.toLowerCase() + '.html'
-
         if (doesFileExist(url)) {
-            window.location.assign(url)
-        } else {
-            console.log('wrong guess')
+            window.open(url)
         }
     }
 }
