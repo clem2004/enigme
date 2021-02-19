@@ -5,6 +5,8 @@ input.onkeypress = function(e) {
         let url = 'https://clem2004.github.io/enigme/' + input.value.toLowerCase() + '.html'
         if (doesFileExist(url)) {
             window.open(url)
+        } else {
+            window.open('https://clem2004.github.io/enigme/wrong.html')
         }
     }
 }
