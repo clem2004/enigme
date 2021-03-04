@@ -2,11 +2,11 @@ let input = document.getElementById('fname')
 
 input.onkeypress = function(e) {
     if ( e.key == 'Enter' ) {
-        let url = 'https://clem2004.github.io/enigme/pages/' + input.value.toLowerCase() + '.html'
+        let url = 'https://clem2004.github.io/enigme/enigme1/pages/' + input.value.toLowerCase() + '.html'
         if (doesFileExist(url)) {
             window.open(url)
         } else {
-            window.open('https://clem2004.github.io/enigme/wrong.html')
+            window.open('https://clem2004.github.io/enigme/enigme1/wrong.html')
         }
     }
 }
