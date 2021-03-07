@@ -10,37 +10,32 @@
 <body>
     <div>
         <play>▶️ Écouter le son</play>
-        <key id="1" style="background-color: rgb(224, 224, 224); color: rgb(0, 0, 0);"><b>1</b></key>
-        <key id="2" style="background-color: rgb(224, 224, 224); color: rgb(0, 0, 0);"><b>2</b></key>
-        <key id="3" style="background-color: rgb(49, 49, 49); color: rgb(255, 255, 255);"><b>3</b></key>
-        <key id="4" style="background-color: rgb(224, 224, 224); color: rgb(0, 0, 0);"><b>4</b></key>
-        <key id="5" style="background-color: rgb(49, 49, 49); color: rgb(255, 255, 255);"><b>5</b></key>
-        <key id="6" style="background-color: rgb(224, 224, 224); color: rgb(0, 0, 0);"><b>6</b></key>
+        <span>
+            <key id="1" style="background-color: rgb(224, 224, 224); color: rgb(0, 0, 0);"><b>1</b></key>
+            <key id="2" style="background-color: rgb(224, 224, 224); color: rgb(0, 0, 0);"><b>2</b></key>
+            <key id="3" style="background-color: rgb(49, 49, 49); color: rgb(255, 255, 255);"><b>3</b></key>
+            <key id="4" style="background-color: rgb(224, 224, 224); color: rgb(0, 0, 0);"><b>4</b></key>
+            <key id="5" style="background-color: rgb(49, 49, 49); color: rgb(255, 255, 255);"><b>5</b></key>
+            <key id="6" style="background-color: rgb(224, 224, 224); color: rgb(0, 0, 0);"><b>6</b></key>
+        </span>
     </div>
     <button>Obtenir un indice 💡</button>
     <script>
         let pageName = window.location.pathname.replace('.html','');
         let url = 'https://clem2004.github.io' + pageName + 'Indice.html'
         document.getElementsByTagName('button')[0].onclick = function(){ window.open(url) };
-
         var audio = new Audio('musique/fullAudio.mp3');
         document.getElementsByTagName('play')[0].onclick = function(){ audio.play(); };
-
         var audio1 = new Audio('musique/1.mp3');
         document.getElementById('1').onclick = function(){ audio1.play(); };
-
         var audio2 = new Audio('musique/2.mp3');
         document.getElementById('2').onclick = function(){ audio2.play(); };
-
         var audio3 = new Audio('musique/3.mp3');
         document.getElementById('3').onclick = function(){ audio3.play(); };
-
         var audio4 = new Audio('musique/4.mp3');
         document.getElementById('4').onclick = function(){ audio4.play(); };
-
         var audio5 = new Audio('musique/5.mp3');
         document.getElementById('5').onclick = function(){ audio5.play(); };
-
         var audio6 = new Audio('musique/6.mp3');
         document.getElementById('6').onclick = function(){ audio6.play(); };
     </script>
