@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(0, 140, 175);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+img {
+    position: relative;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+input {
+    position: relative;
+    display: inline;
+    width: 168;
+    padding: 10px;
+
+    font-family: Andale Mono, monospace;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+
+    background-color: rgb(0, 114, 143);
+    border: 2px solid rgb(0, 88, 110);
+    border-radius: 10px;
+}
+
+div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-family: Andale Mono, monospace;
+    color: white;
+    text-align: center;
+}
